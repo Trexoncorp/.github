@@ -102,6 +102,18 @@ Data schema updates support a defined set of changes. Before evolving an existin
 database, read the [schema guide](https://github.com/Trexoncorp/Trexon.Data/blob/main/docs/SCHEMA.md).
 For deployment, start with the [operations guide](https://github.com/Trexoncorp/Trexon.Web/blob/main/docs/OPERATIONS.md).
 
+To start a new application with all four libraries already configured, install Trexon.Templates and generate a starter API:
+```sh
+dotnet new install Trexon.Templates
+dotnet new trexon-api -n MyApi
+cd MyApi
+dotnet run
+```
+The generated project includes Swagger, validated CRUD endpoints, SQLite persistence, typed configuration, and structured logging.
+
+Open http://127.0.0.1:5090/docs to try it. Requires .NET SDK 8+ and ASP.NET Core Runtime 8.
+
+
 ## Documentation & feedback
 
 | Start here | Guides |
